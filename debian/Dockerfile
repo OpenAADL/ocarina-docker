@@ -21,8 +21,9 @@
 FROM debian:testing
 MAINTAINER Jerome Hugues <hugues.jerome@gmail.com>
 
-RUN apt-get update && apt-get install -y autoconf automake gnat-6 \
-    build-essential git python python-dev
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    autoconf automake gnat-6 build-essential git python python-dev \
+    wget ca-certificates
 
 ###############################################################################
 # Install default "ocarina" user
@@ -37,4 +38,5 @@ ENV PATH /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ENV LANG en_US
 ENV LC_ALL en_US.UTF-8
 
-RUN cd $HOME && git clone https://github.com/OpenAADL/ocarina-build.git
+RUN cd $HOME && wget https://raw.githubusercontent.com/OpenAADL/ocarina-build/master/build_ocarina.sh && chmod 755 build_ocarina.sh
+WORKDIR /home/ocarina
