@@ -30,6 +30,8 @@ RUN apt-get update && apt-get install -y autoconf automake gnat-6 \
 RUN useradd -m -c "ocarina" -s /bin/bash ocarina
 VOLUME /work
 
+# Set up account and fetch fresh copy of ocarina-build repository
+
 USER ocarina
 ENV PATH /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ENV LANG en_US
