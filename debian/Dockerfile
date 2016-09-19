@@ -38,5 +38,5 @@ ENV PATH /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ENV LANG en_US
 ENV LC_ALL en_US.UTF-8
 
-RUN cd $HOME && wget https://raw.githubusercontent.com/OpenAADL/ocarina-build/master/build_ocarina.sh && chmod 755 build_ocarina.sh
+RUN cd $HOME && git clone https://github.com/OpenAADL/ocarina-build.git
 WORKDIR /home/ocarina
