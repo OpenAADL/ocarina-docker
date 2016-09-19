@@ -36,3 +36,8 @@ ENV LC_ALL en_US.UTF-8
 
 RUN cd $HOME && git clone https://github.com/OpenAADL/ocarina-build.git
 WORKDIR /home/ocarina
+
+# Default command: run the fresh-install scenario to build Ocarina in
+# the container
+
+CMD cd $HOME/ocarina-build && ./build_ocarina.sh --self-update && ./build_ocarina.sh --scenario=fresh-install --prefix=$HOME/local
