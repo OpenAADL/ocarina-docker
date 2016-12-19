@@ -8,7 +8,7 @@
 #    docker build -t ocarina/build .
 #
 # To run the image:
-#    docker run -t -i ocarina/build bash
+#    docker run -t -i -v $PWD/data/:/work ocarina/build bash
 #
 ###############################################################################
 
