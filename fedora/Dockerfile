@@ -13,10 +13,10 @@
 ###############################################################################
 
 ###############################################################################
-# Baseline: fedora/24
+# Baseline: fedora/25
 #
 
-FROM fedora:24
+FROM fedora:25
 MAINTAINER Jerome Hugues <hugues.jerome@gmail.com>
 
 RUN dnf -y update && dnf clean all && dnf -y install autoconf automake gcc-gnat git make
