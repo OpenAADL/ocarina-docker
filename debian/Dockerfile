@@ -21,14 +21,26 @@
 FROM debian:testing
 MAINTAINER Jerome Hugues <hugues.jerome@gmail.com>
 
-RUN apt-get update && apt-get install -y --no-install-recommends \
-    autoconf automake gnat-6 build-essential git python python-dev \
-    wget ca-certificates
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends \
+            git wget ca-certificates \
+            autoconf automake gnat-6 build-essential \
+            python python-dev \
+            checkinstall sudo
+
+# Note on installed packages
+# * git + wget + ca-certificates             : fetch source from repositories
+# * autoconf automake gnat-6 build-essential : compilation chain
+# * python python-dev                        : testsuite
+# * checkinstall sudo                        : automatically build .deb
 
 ###############################################################################
 # Install default "ocarina" user
+# Add Ocarina user to sudoers for building .deb
 
-RUN useradd -m -c "ocarina" -s /bin/bash ocarina
+RUN useradd -m -c "ocarina" -s /bin/bash ocarina && echo "ocarina:ocarina" | chpasswd
+RUN adduser ocarina sudo
+
 VOLUME /work
 
 # Set up account and fetch fresh copy of ocarina-build repository
@@ -37,6 +49,8 @@ USER ocarina
 ENV PATH /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ENV LANG en_US
 ENV LC_ALL en_US.UTF-8
+
+# Install
 
 RUN cd $HOME && git clone https://github.com/OpenAADL/ocarina-build.git
 WORKDIR /home/ocarina
