@@ -13,13 +13,17 @@
 ###############################################################################
 
 ###############################################################################
-# Baseline: fedora/25
+# Baseline: fedora/rawhide
 #
+# Note: we cannot use Fedora 25 as default GCC (GCC 6.2) causes an ICE
+# when building Ocarina
 
-FROM fedora:25
+FROM fedora:rawhide
 MAINTAINER Jerome Hugues <hugues.jerome@gmail.com>
 
-RUN dnf -y update && dnf clean all && dnf -y install autoconf automake gcc-gnat git make
+RUN dnf -y update && \
+    dnf clean all && \
+    dnf -y install autoconf automake gcc-gnat git make findutils
 
 ###############################################################################
 # Install default "ocarina" user
