@@ -26,13 +26,14 @@ RUN apt-get update && \
             git wget ca-certificates \
             autoconf automake gnat-6 build-essential \
             python python-dev \
-            checkinstall sudo
+            checkinstall sudo procps
 
 # Note on installed packages
 # * git + wget + ca-certificates             : fetch source from repositories
 # * autoconf automake gnat-6 build-essential : compilation chain
 # * python python-dev                        : testsuite
 # * checkinstall sudo                        : automatically build .deb
+# * procps                                   : ps, kill, etc.
 
 ###############################################################################
 # Install default "ocarina" user
