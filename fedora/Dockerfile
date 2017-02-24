@@ -23,7 +23,7 @@ MAINTAINER Jerome Hugues <hugues.jerome@gmail.com>
 
 RUN dnf -y update && \
     dnf clean all && \
-    dnf -y install autoconf automake gcc-gnat git make findutils
+    dnf -y install autoconf automake gcc-gnat git make findutils procps
 
 ###############################################################################
 # Install default "ocarina" user
