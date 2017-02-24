@@ -11,8 +11,8 @@ The following images are provided, with the following variant
 
 - debian: currently uses testing to have access to GCC 6.x
 
-- fedora: use rawhide, but both F25 and rawhide GCC 6.x cause an ICE
-  when compiling Ocarina
+- fedora: use rawhide,that features a beta of GCC 7.0
+  Note that Fedora 25 causes an ICE when compiling Ocarina
 
 - centos: even with CentOS 7, uses GNAT GPL 2016
 
