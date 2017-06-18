@@ -14,7 +14,7 @@ The following images are provided, with the following variant
 - fedora: use rawhide,that features a beta of GCC 7.0
   Note that Fedora 25 causes an ICE when compiling Ocarina
 
-- centos: even with CentOS 7, uses GNAT GPL 2016
+- centos: CentOS 7, uses GNAT GPL 2016
 
 ## Usage
 
