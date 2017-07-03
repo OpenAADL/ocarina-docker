@@ -5,16 +5,18 @@
 Ocarina docker images, based on various linux images: debian and fedora
 
 These docker files fetch all dependencies to compile Ocarina, along
-with the `build_ocarina.sh` build script
+with the `build_ocarina.sh` build script.
 
 The following images are provided, with the following variant
 
-- debian: currently uses testing to have access to GCC 6.x
+- centos-7.x-gnat-gpl-2016: CentOS 7, uses GNAT GPL 2016
+
+- centos-7.x-gnat-gpl-2017: CentOS 7, uses GNAT GPL 2017
+
+- debian-9.0: debian 9.0 stable image, using debian default GCC
 
 - fedora: use rawhide,that features a beta of GCC 7.0
-  Note that Fedora 25 causes an ICE when compiling Ocarina
 
-- centos: CentOS 7, uses GNAT GPL 2016
 
 ## Usage
 
