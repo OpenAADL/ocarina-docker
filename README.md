@@ -15,6 +15,8 @@ The following images are provided, with the following variant
 
 - debian-9.0: debian 9.0 stable image, using debian default GCC
 
+- debian-testing: debian testing image, using debian default GCC
+
 - fedora: use rawhide,that features a beta of GCC 7.0
 
 
