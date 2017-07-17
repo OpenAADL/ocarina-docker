@@ -17,8 +17,9 @@ The following images are provided, with the following variant
 
 - debian-testing: debian testing image, using debian default GCC
 
-- fedora: use rawhide,that features a beta of GCC 7.0
+- fedora-26: fedora 26 image, using Fedora default GCC
 
+- fedora-rawhide: use rawhide, default GCC
 
 ## Usage
 
