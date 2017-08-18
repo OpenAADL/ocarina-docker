@@ -9,17 +9,14 @@ with the `build_ocarina.sh` build script.
 
 The following images are provided, with the following variant
 
-- centos-7.x-gnat-gpl-2016: CentOS 7, uses GNAT GPL 2016
-
-- centos-7.x-gnat-gpl-2017: CentOS 7, uses GNAT GPL 2017
-
-- debian-9.0: debian 9.0 stable image, using debian default GCC
-
-- debian-testing: debian testing image, using debian default GCC
-
-- fedora-26: fedora 26 image, using Fedora default GCC
-
-- fedora-rawhide: use rawhide, default GCC
+| Name                     | Distribution    | GNAT          |
+| ------------------------ |:---------------:| -------------:|
+| centos-7.x-gnat-gpl-2016 | CentOS 7        | GNAT GPL 2016 | 
+| centos-7.x-gnat-gpl-2017 | CentOS 7        | GNAT GPL 2017 | 
+| debian-9.0               | Debian 9 stable | debian GCC    |
+| debian-testing           | Debian teting   | debian GCC    |
+| fedora-26                | Fedora 26       | Fedora GCC    |
+| fedora-Rawhide           | Fedora Rawhide       | Fedora GCC    |
 
 ## Usage
 
