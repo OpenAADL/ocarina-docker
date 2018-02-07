@@ -9,7 +9,7 @@ with the `build_ocarina.sh` build script.
 
 The following images are provided, with the following variant
 
-| Name                     | Distribution    | GNAT          |
+| Name                     | Distribution    | GNAT version  |
 | ------------------------ |:---------------:| -------------:|
 | centos-7.x-gnat-gpl-2016 | CentOS 7        | GNAT GPL 2016 |
 | centos-7.x-gnat-gpl-2017 | CentOS 7        | GNAT GPL 2017 |
