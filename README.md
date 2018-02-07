@@ -11,12 +11,19 @@ The following images are provided, with the following variant
 
 | Name                     | Distribution    | GNAT          |
 | ------------------------ |:---------------:| -------------:|
-| centos-7.x-gnat-gpl-2016 | CentOS 7        | GNAT GPL 2016 | 
-| centos-7.x-gnat-gpl-2017 | CentOS 7        | GNAT GPL 2017 | 
-| debian-9.0               | Debian 9 stable | debian GCC    |
-| debian-testing           | Debian teting   | debian GCC    |
-| fedora-26                | Fedora 26       | Fedora GCC    |
-| fedora-Rawhide           | Fedora Rawhide       | Fedora GCC    |
+| centos-7.x-gnat-gpl-2016 | CentOS 7        | GNAT GPL 2016 |
+| centos-7.x-gnat-gpl-2017 | CentOS 7        | GNAT GPL 2017 |
+| debian-9.0               | Debian 9 stable | default GCC   |
+| debian-testing           | Debian teting   | default GCC   |
+| fedora-26                | Fedora 26       | default GCC   |
+| fedora-27                | Fedora 27       | default GCC   |
+| fedora-Rawhide           | Fedora Rawhide  | default GCC   |
+| Ubuntu-Xenial            | Ubuntu Xenial   | PPA/GCC6      |
+| Ubuntu-Artful            | Ubuntu Artful   | default GCC   |
+
+Note: CentOS builds rely on GNAT GPL releases, Ubuntu-Xenial uses
+PPA/GCC to use a more recent GCC version. All other builds rely on the
+default GCC provided by the Linux distribution.
 
 ## Usage
 
