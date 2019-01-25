@@ -2,7 +2,8 @@
 
 ## About
 
-Ocarina docker images, based on various linux images: debian and fedora
+Ocarina docker images, based on various Linux images: CentOS, debian,
+Fedora and Ubuntu.
 
 These docker files fetch all dependencies to compile Ocarina, along
 with the `build_ocarina.sh` build script.
