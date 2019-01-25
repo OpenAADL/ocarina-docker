@@ -13,15 +13,15 @@
 ###############################################################################
 
 ###############################################################################
-# Baseline: fedora/27
+# Baseline: fedora/29
 #
 
-FROM fedora:27
+FROM fedora:29
 MAINTAINER Jerome Hugues <hugues.jerome@gmail.com>
 
 RUN dnf -y update && \
     dnf clean all && \
-    dnf -y install autoconf automake gcc-gnat git make findutils procps
+    dnf -y install autoconf automake gcc-gnat git make findutils procps gprbuild
 
 ###############################################################################
 # Install default "ocarina" user

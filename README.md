@@ -17,8 +17,7 @@ The following images are provided, with the following variant
 | centos-7.x-gnat-community-2018 | CentOS 7        | GNAT Community 2018 |
 | debian-9.0                     | Debian 9 stable | default GCC         |
 | debian-testing                 | Debian teting   | default GCC         |
-| fedora-26                      | Fedora 26       | default GCC         |
-| fedora-27                      | Fedora 27       | default GCC         |
+| fedora-29                      | Fedora 29       | default GCC         |
 | fedora-Rawhide                 | Fedora Rawhide  | default GCC         |
 | Ubuntu-Xenial                  | Ubuntu Xenial   | PPA/GCC6            |
 | Ubuntu-Artful                  | Ubuntu Artful   | default GCC         |
