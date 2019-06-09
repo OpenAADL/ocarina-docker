@@ -13,7 +13,7 @@
 ###############################################################################
 
 ###############################################################################
-# Baseline: Ubuntu/Xenial 16.04 LTS
+# Baseline: Ubuntu/Artful 17.10
 
 FROM ubuntu:artful
 MAINTAINER Jerome Hugues <hugues.jerome@gmail.com>
