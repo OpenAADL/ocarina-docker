@@ -5,7 +5,7 @@
 # with the build_ocarina.sh build script
 #
 # To build the image:
-#    Docker build -t ocarina/build .
+#    docker build -t ocarina/build .
 #
 # To run the image:
 #    docker run -t -i -v $PWD/data/:/work ocarina/build bash
@@ -22,7 +22,7 @@ MAINTAINER Jerome Hugues <hugues.jerome@gmail.com>
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
             git wget ca-certificates \
-            autoconf automake gnat build-essential \
+            autoconf automake gnat gprbuild build-essential \
             python python-dev \
             sudo procps
 

@@ -21,7 +21,7 @@ MAINTAINER Jerome Hugues <hugues.jerome@gmail.com>
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
             git wget ca-certificates \
-            autoconf automake gnat build-essential \
+            autoconf automake gnat gprbuild build-essential \
             python python-dev \
             checkinstall sudo procps
 
