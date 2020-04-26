@@ -46,3 +46,15 @@ or
 ```
 
 to run the default scenario: perform a fresh install of Ocarina
+
+## Running Ocarina from a docker container
+
+The `debian-10.0` dockerfile has been adapted so that you can run
+ocarina from the docker container.
+
+Let us suppose you have some AADL files in the common directory, you
+can then run
+
+```
+docker run -ti  -v `pwd`:/work  ocarina/ocarina ocarina [ocarina arguments]
+```

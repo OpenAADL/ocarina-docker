@@ -42,22 +42,19 @@ RUN adduser ocarina sudo
 
 VOLUME /work
 
-# Set up account and fetch fresh copy of ocarina-build repository
-
-USER ocarina
 ENV TERM xterm
 ENV PATH /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-ENV LANG en_US
-ENV LC_ALL en_US.UTF-8
+ENV LANG C.UTF-8
 
-# Install
+# Install ocarina-build
 
 RUN cd $HOME && git clone https://github.com/OpenAADL/ocarina-build.git
-WORKDIR /home/ocarina
+WORKDIR /work
 
-# Default command: run the fresh-install scenario to build Ocarina in
-# the container
+# Install Ocarina in default directory
 
-CMD cd $HOME/ocarina-build && \
+RUN cd $HOME/ocarina-build && \
     ./build_ocarina.sh --self-update && \
-    ./build_ocarina.sh --scenario=fresh-install --prefix=$HOME/local
+    ./build_ocarina.sh --scenario=fresh-install --prefix=/usr/
+
+USER ocarina
