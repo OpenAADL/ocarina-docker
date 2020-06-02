@@ -12,6 +12,7 @@ The following images are provided, with the following variant
 
 | Name                           | Distribution     | GNAT                |
 | ------------------------------ |:----------------:| -------------------:|
+| alpine                         | Alpine           | default GCC         |
 | centos-7.x-gnat-gpl-2016       | CentOS 7         | GNAT GPL 2016       |
 | centos-7.x-gnat-gpl-2017       | CentOS 7         | GNAT GPL 2017       |
 | centos-7.x-gnat-community-2018 | CentOS 7         | GNAT Community 2018 |
