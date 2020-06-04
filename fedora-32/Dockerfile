@@ -13,15 +13,15 @@
 ###############################################################################
 
 ###############################################################################
-# Baseline: fedora/29
+# Baseline: fedora/32
 #
 
-FROM fedora:29
+FROM fedora:32
 MAINTAINER Jerome Hugues <hugues.jerome@gmail.com>
 
 RUN dnf -y update && \
     dnf clean all && \
-    dnf -y install autoconf automake gcc-gnat git make findutils procps gprbuild
+    dnf -y install autoconf automake gcc-gnat gprbuild git make findutils procps gprbuild
 
 ###############################################################################
 # Install default "ocarina" user
@@ -42,6 +42,6 @@ WORKDIR /home/ocarina
 # Default command: run the fresh-install scenario to build Ocarina in
 # the container
 
-CMD cd $HOME/ocarina-build && \
+RUN cd $HOME/ocarina-build && \
     ./build_ocarina.sh --self-update && \
     ./build_ocarina.sh --scenario=fresh-install --prefix=$HOME/local

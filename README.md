@@ -19,7 +19,7 @@ The following images are provided, with the following variant
 | debian-9.0                     | Debian 9 stable  | default GCC         |
 | debian-10.0                    | Debian 10 stable | default GCC         |
 | debian-testing                 | Debian teting    | default GCC         |
-| fedora-29                      | Fedora 29        | default GCC         |
+| fedora-32                      | Fedora 32        | default GCC         |
 | fedora-Rawhide                 | Fedora Rawhide   | default GCC         |
 | Ubuntu-Xenial                  | Ubuntu Xenial    | PPA/GCC6            |
 | Ubuntu-Artful                  | Ubuntu Artful    | default GCC         |
