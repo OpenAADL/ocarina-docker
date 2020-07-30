@@ -23,6 +23,7 @@ The following images are provided, with the following variant
 | fedora-Rawhide                 | Fedora Rawhide   | default GCC         |
 | Ubuntu-Xenial                  | Ubuntu Xenial    | PPA/GCC6            |
 | Ubuntu-Artful                  | Ubuntu Artful    | default GCC         |
+| ubuntu-20.04                   | Ubuntu 20.04 LTS | default GCC         |
 
 Note: CentOS builds rely on GNAT GPL or Community releases,
 Ubuntu-Xenial uses PPA/GCC to use a more recent GCC version. All other
